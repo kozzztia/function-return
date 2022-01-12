@@ -102,7 +102,7 @@ const text = document.querySelectorAll('.text')
 
 // -task7
 
-let testArray = [1, 2, 3, 22, 66];
+
 
 // function checkingString(...args) {
 //     const numbs = args.forEach((item, index) => {
@@ -255,23 +255,90 @@ function randomNumber(min, max) {
 // }
 
 
+// -task21
 
 
+// function gettOddOrEven() {
+//     let evenOrOdd = input3.value;
+//     if (evenOrOdd === 'odd') {
+//         let num = randomNumber(10, 20)
+//         console.log(num);
+//         if (num !== 10) return gettOddOrEven()
+//         console.log(num)
+//     } else if (evenOrOdd === 'even') {
+//         let num = randomNumber(10, 20)
+//         if (num % 2 === 0) return gettOddOrEven()
+//         console.log(num)
+//     }
+// }
+// push.onclick = () => {
+//     gettOddOrEven()
+// }
 
-function gettOddOrEven() {
-    let evenOrOdd = input3.value;
-    if (evenOrOdd === 'odd') {
-        let num = randomNumber(10, 20)
-        console.log(num);
-        if (num % 2 !== 0) return num = randomNumber(10, 20)
-        console.log(num)
-    } else if (evenOrOdd === 'even') {
-        let num = randomNumber(10, 20)
-        if (num % 2 === 0) return num = randomNumber(10, 20)
-        console.log(num)
-    }
-}
-push.onclick = () => {
-    gettOddOrEven()
-}
+// --task 22
+
+
+// function task22(...args) {
+//     title.textContent = "";
+//     args.forEach((item) => {
+//         item % 2 === 0 ? title.textContent += ' ' + item : console.log(item)
+//     })
+// }
+
+// task22(...testArray)
+
+// --task 23
+
+// function task23() {
+//     return Math.pow(randomNumber(2, 2), randomNumber(2, 4))
+// }
+// console.log(task23())
+
+// --task 25
+// let testArray = [8, 2, 4, 22, 66, 2, 2, 1];
+
+// function task26(...args) {
+//     title.textContent = 'true';
+//     args.forEach(function (arg) {
+//         if (arg % 2 !== 0) { title.textContent = 'false'; }
+//     })
+// }
+
+// task26(...testArray)
+
+// task 26
+
+// function task26(text) {
+//     text = input3.value;
+//     if (text.length > 0) {
+//         title.textContent = text.toLowerCase();
+//         console.log(text.length)
+//     }
+//     else if (text.length === 0) {
+//         title.textContent = 'undefined';
+//         return
+//     }
+// }
+
+// push.onclick = () => {
+//     task26(text)
+// }
+
+// task 27
+// let obj = {
+//     first: 'Kostia',
+//     second: 'Dasha',
+//     third: 'Ivan'
+// }
+// function task27(Name) {
+//     for (let key of Object.keys(obj)) {
+//         if (obj[key] === Name) title.textContent = 'number of name : ' + key;
+//     }
+// }
+// push.onclick = () => {
+//     task27(input3.value)
+// }
+
+// task 28 
+
 
