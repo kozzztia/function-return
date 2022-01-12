@@ -243,13 +243,35 @@ function randomNumber(min, max) {
 
 // -t20
 
-function getText(out, callback, text) {
-    out.innerHTML = callback(text);
-}
-function callBack(text) {
+// function getText(out, callback, text) {
+//     out.innerHTML = callback(text);
+// }
+// function callBack(text) {
 
-    return text.split("").reverse().join("");
+//     return text.split("").reverse().join("");
+// }
+// push.onclick = () => {
+//     return getText(title, callBack, input3.value)
+// }
+
+
+
+
+
+function gettOddOrEven() {
+    let evenOrOdd = input3.value;
+    if (evenOrOdd === 'odd') {
+        let num = randomNumber(10, 20)
+        console.log(num);
+        if (num % 2 !== 0) return num = randomNumber(10, 20)
+        console.log(num)
+    } else if (evenOrOdd === 'even') {
+        let num = randomNumber(10, 20)
+        if (num % 2 === 0) return num = randomNumber(10, 20)
+        console.log(num)
+    }
 }
 push.onclick = () => {
-    return getText(title, callBack, input3.value)
+    gettOddOrEven()
 }
+
